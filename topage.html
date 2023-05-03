@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="topage.css">
+ </head>
+<body>
+<h1>TO DO</h1>
+<div class="line">
+</div>
+
+<span id="result"></span>
+
+
+
+
+<div class="row">
+    <div class="col-12">
+        <input id="userInput" type="text" placeholder="my task..." maxlength="50">
+        <button id="enter">ADD</button>
+    </div>
+</div>
+
+<!-- Empty List -->
+<div class="row">
+    <div class="listItems col-12">
+        <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+        </ul>
+    </div>
+</div>
+
+</div>
+<script type="text/javascript" src="script_method3.js"></script>
+
+
+
+
+<script src="topage.js"></script>
+<script>
+    document.getElementById("result").innerHTML=localStorage.getItem("textvalues");
+</script>
+    <script>
+        const url = localStorage.getItem('my-image');
+        
+        const img = new Image();
+        img.src = url;
+        document.body.appendChild(img);
+        
+        
+        
+        </script>
+</body>
+</html>

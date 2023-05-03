@@ -1,0 +1,134 @@
+.line{
+    background-color: black;
+    width: 1900px;
+    height: 120px;
+    margin-top: -100px;
+    
+}
+h1{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+   position:fixed;
+    margin-left: 1750px;
+     margin-top: -300px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+#result{
+    position: absolute;
+    display: flex;
+    margin-left: 1500px;
+    margin-top: -30px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+
+
+
+#first {
+	margin-top: 10px;
+	color: #FFCD5D;
+}
+
+#second {
+	color: #51DF70;
+
+}
+
+#third {
+	color: #025F70;
+	margin-bottom: 30px;
+}
+
+
+#enter {
+    position: absolute;
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+	color: #474747;
+    font-size: 30px;
+	background-color: #5EFC8D;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover{
+	background-color: #202020;
+	color: #FFCD5D;
+}
+
+ul {
+	text-align: left;
+	margin-top: 20px;
+}
+
+
+li {
+    position:none;
+    display:block;
+	list-style: none;
+	padding: 10px;
+	color: #ffffff;
+    width: 400px;
+    margin-left: 650px;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 7px solid #18191a;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #101111;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+    
+}
+
+
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #025f70;
+	font-weight: 800;
+}
+
+input {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 600px;
+	border-radius: 5px;
+    height: 95px;
+	min-width: 30%;
+	padding: 5px;
+    font-size: 30px;
+
+	border: none;
+    background-color: #cecece;
+}
+
+
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+}

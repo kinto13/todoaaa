@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addfor.css">
+    <title>Document</title>
+</head>
+<body>
+  <form action="topage.html">
+    <div class="me">
+        <h1>Get Started</h1>
+    </div>
+
+    
+  <h2>add a foto</h2>
+    <div class="input-group">
+        <label for="img" class="img"></label>
+          <label for="file" class="hio""><i><img src="add_es.png" style="margin-top: 50px;"/></i></label>
+          <input  type="file" id="file" class="images"  accept="image/png, image/jpg"  style="visibility: hidden;"/>
+          <div class="oval"></div>
+          <span id="img-error"> </span>
+        </div>
+       
+ <h3>fill in you name</h3>
+        <div class="input-group1">
+            <label for="fname" id="sax"></label>
+      <input type="text" id="fname"  onkeyup="myfunction()" onkeyup="valdatefname()" onclick="passvalues()"  name="fname" placeholder="your name" />
+    <span id="name-error"> </span>
+    </div>
+
+    <button id="but">Sign In</button>
+<span id="shemdeg-error"> </span>
+</form>
+
+<script>
+  function passvalues(){
+    var name=document.getElementById("sax").value;
+    localStorage.setItem("textvalues", name);
+    return false;
+  }
+</script>
+
+
+    <script>
+        const file = document.getElementById('file');
+        const but = document.getElementById('but');
+      
+        but.addEventListener('click', () => {
+          window.location.href = "topage.html";
+        })
+        file.addEventListener('change', () =>{
+      
+          const fr = new FileReader();
+      
+           fr.readAsDataURL(file.files[0]);
+      
+           fr.addEventListener('load', () => {
+       
+            const url = fr.result;
+      
+            localStorage.setItem('my-image', url);
+           })
+      
+           })
+      </script>
+</body>
+</html>
